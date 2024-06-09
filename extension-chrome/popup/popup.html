@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Docs Background</title>
+	<link rel="stylesheet" href="bulma.min.css"/>
+</head>
+<style>
+body {
+	width: 400px;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+</style>
+<body>
+	<div class="container m-3">
+		<h1 class="title">Docs Background Editor</h1>
+		<div class="field">
+			<p>Refresh page to apply changes</p>
+			<p>Opacity also affects text opacity</p>
+			<label class="label">Image URL:</label>
+			<div class="control">
+				<input class="input is-link" type="text" placeholder="Enter Image URL" id="link">
+			</div>
+			<label class="label">Sidebar Opacity:</label>
+			<div class="control">
+				<input class="input is-text" type="text" placeholder="Enter a value between 0 and 1" id="trans">
+			</div>
+			<label class="label">Page Opacity:</label>
+			<div class="control">
+				<input class="input is-text" type="text" placeholder="Enter a value between 0 and 1" id="page">
+			</div>
+			<label class="label">Image horizontal position:</label>
+			<div class="control">
+				<input class="slider is-fullwidth" step="1" min="0" max="100" placeholder="50" type="range" id="horiz">
+			</div>
+			<label class="label">Image vertical position:</label>
+			<div class="control">
+				<input class="slider is-fullwidth" step="1" min="0" max="100" placeholder="50" type="range" id="vert">
+			</div>
+			<label class="label">Image scale:</label>
+			<div class="control">
+				<input class="slider is-fullwidth" step="1" min="0" max="200" placeholder="100" type="range" id="scale">
+			</div>
+			<div class="field">
+				<button class="button is-success is-light" id="submit">Submit</button>
+				<button class="button is-danger is-light" id="reset">Reset Sliders</button>
+			</div>
+
+
+		</div>
+	</div>
+
+</body>
+<script src="popup.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
